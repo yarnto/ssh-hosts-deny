@@ -9,7 +9,8 @@ type CmdConfig struct {
 	SecureFile      string // secure file path
 	DenyFile        string // host deny file
 	SshLoginFailCnt int    // default ssh login failed count
-	PrintVer        bool   //print version
+	PrintVer        bool   // print version
+	CheckStyle      string // check style: pam or password
 }
 
 // check the config are correct

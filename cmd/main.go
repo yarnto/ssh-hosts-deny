@@ -23,6 +23,8 @@ func main() {
 	flag.StringVar(&logPath, "log-path", "", "log save path, default terminal output")
 	flag.IntVar(&logLevel, "log-level", 5, "log level, default:5, trace:6, debug:5, info:4, warning:3, error:2, fatal:1, panic:0")
 
+	flag.StringVar(&Config.CheckStyle, "check-style", "password", "check style: pam or password")
+
 	flag.Parse()
 
 	if Config.PrintVer {
