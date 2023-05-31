@@ -3,6 +3,8 @@
 看到自己的服务器经常被别人扫描端口, ssh登录尝试, 所以准备写个程序直接监控系统日志, 如果出现使用root账户登录多次都密码错误, 直接封掉IP, 错误次数可以自己设置, 默认5次
 
 ```
+  -check-style string
+        check style: pam or password (default "password")
   -cnt int 
         ssh login failed count (default 5) SSH登录出现错误的次数
   -df string
